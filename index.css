@@ -1,0 +1,17 @@
+#comma
+{
+    font-size: 12em;
+    position: fixed;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
+
+#button
+{
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+}

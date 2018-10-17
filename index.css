@@ -1,14 +1,31 @@
 #comma
 {
     font-size: 12em;
+    color: #333333;
+    text-shadow: 2px 2px #919191;
     position: fixed;
     left: 50%;
     top: 10%;
     transform: translate(-50%, -50%);
 }
 
+#comma::selection
+{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#comma::-moz-selection
+{
+    background-color: #000000;
+    color: #ffffff;
+}
+
 #button
 {
+    -webkit-user-select: none;      
+    -moz-user-select: none;
+    -ms-user-select: none;
     font-family: 'Courier New', Courier, monospace;
     position: fixed;
     left: 50%;

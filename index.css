@@ -21,7 +21,7 @@
     color: #ffffff;
 }
 
-#button
+#ui
 {
     -webkit-user-select: none;      
     -moz-user-select: none;
@@ -31,4 +31,9 @@
     left: 50%;
     top: 75%;
     transform: translate(-50%, -50%);
+}
+
+.btn
+{
+    font-family: 'Courier New', 'Courier', monospace;
 }

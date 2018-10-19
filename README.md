@@ -1,3 +1,2 @@
 # Greek Commas
-## ;
-[Here](https://iggyglass.github.io/)
+`;` [Here](https://iggyglass.github.io/)

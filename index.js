@@ -1,21 +1,23 @@
 var errText = document.getElementById("error");
-var cb = new ClipboardJS('.btn');
 
-cb.on('success', function(e)
-{
-    errText.style.visibility = "hidden";
-});
+function copy() {
+    try {
+        var el = document.createElement("textarea");
 
-cb.on('error', function(e)
-{
-    errText.style.visibility = "visible";
-});
+        el.value = ';';
+        el.setAttribute('readonly', '');
+        el.style.position = 'absolute';
+        el.style.left = '-9999px';
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
 
-if (!ClipboardJS.isSupported())
-{
-    errText.style.visibility = "visible";
+        errText.style.visibility = 'hidden';
+    }
+    catch (e) {
+        errText.style.visibility = 'visible';
+    }
 }
-else
-{
-    errText.style.visibility = "hidden";
-}
+
+errText.style.visibility = 'hidden';

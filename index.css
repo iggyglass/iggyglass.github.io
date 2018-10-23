@@ -2,7 +2,7 @@
 {
     font-size: 12em;
     color: #333333;
-    text-shadow: 2px 2px #919191;
+    text-shadow: 2px 2px #b8b8b8;
     position: fixed;
     left: 50%;
     top: 10%;
@@ -11,13 +11,13 @@
 
 #comma::selection
 {
-    background-color: #000000;
+    background-color: #333333;
     color: #ffffff;
 }
 
 #comma::-moz-selection
 {
-    background-color: #000000;
+    background-color: #333333;
     color: #ffffff;
 }
 

@@ -3,8 +3,8 @@ var errText = document.getElementById("error");
 function copy() {
     try {
         var el = document.createElement("textarea");
+        el.value = '\u037e';
 
-        el.value = ';';
         el.setAttribute('readonly', '');
         el.style.position = 'absolute';
         el.style.left = '-9999px';

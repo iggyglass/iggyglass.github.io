@@ -27,6 +27,7 @@ body {
 
 #error {
     margin: 0px;
+    color: #333333;
     -webkit-user-select: none;      
     -moz-user-select: none;
     -ms-user-select: none;

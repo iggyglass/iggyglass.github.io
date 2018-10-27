@@ -1,11 +1,13 @@
 #comma {
-    font-size: 12em;
+    margin: 0px;
+    font-size: 15em;
     font-family: 'Times New Roman', Times, serif;
     color: #333333;
     text-shadow: 2px 2px #b8b8b8;
-    position: fixed;
+    position: absolute;
     left: 50%;
-    top: 10%;
+    top: 50%;
+    margin-right: -50%;
     transform: translate(-50%, -50%);
 }
 
@@ -19,17 +21,35 @@
     color: #ffffff;
 }
 
-#ui {
+#error {
+    margin: 0px;
     -webkit-user-select: none;      
     -moz-user-select: none;
     -ms-user-select: none;
     font-family: 'Courier New', Courier, monospace;
-    position: fixed;
+    position: absolute;
     left: 50%;
-    top: 75%;
+    bottom: 5%;
+    margin-right: -50%;
     transform: translate(-50%, -50%);
 }
 
-.btn {
-    font-family: 'Courier New', 'Courier', monospace;
+#copy {
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-user-select: none;      
+    -moz-user-select: none;
+    -ms-user-select: none;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    color: #b8b8b8;
+}
+
+#copy:hover {
+    color: #333333;
+}
+
+#copy:active {
+    color: #777777;
 }

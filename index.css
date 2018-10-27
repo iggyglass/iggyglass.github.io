@@ -1,6 +1,6 @@
-#comma
-{
+#comma {
     font-size: 12em;
+    font-family: 'Times New Roman', Times, serif;
     color: #333333;
     text-shadow: 2px 2px #b8b8b8;
     position: fixed;
@@ -9,20 +9,17 @@
     transform: translate(-50%, -50%);
 }
 
-#comma::selection
-{
+#comma::selection {
     background-color: #333333;
     color: #ffffff;
 }
 
-#comma::-moz-selection
-{
+#comma::-moz-selection {
     background-color: #333333;
     color: #ffffff;
 }
 
-#ui
-{
+#ui {
     -webkit-user-select: none;      
     -moz-user-select: none;
     -ms-user-select: none;
@@ -33,7 +30,6 @@
     transform: translate(-50%, -50%);
 }
 
-.btn
-{
+.btn {
     font-family: 'Courier New', 'Courier', monospace;
 }

@@ -60,3 +60,20 @@ body {
 #copy:active {
     color: #777777;
 }
+
+.anim {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade {
+    from {
+        color: #33333300;
+        text-shadow: 2px 2px #b8b8b800;
+    }
+
+    to {
+        color: #333333ff;
+        text-shadow: 2px 2px #b8b8b8ff;
+    }
+}

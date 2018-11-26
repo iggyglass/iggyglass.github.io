@@ -1,4 +1,5 @@
 var errText = document.getElementById("error");
+var comma = document.getElementById("comma");
 var presses = 0;
 var timer;
 
@@ -16,6 +17,8 @@ function copy() {
         document.body.removeChild(el);
 
         errText.style.visibility = 'hidden';
+
+        playAnim();
     }
     catch (e) {
         errText.style.visibility = 'visible';
@@ -34,5 +37,13 @@ document.addEventListener('keydown', function(e) {
         presses = 0;
     }
 });
+
+function playAnim() {
+    comma.classList.remove("anim");
+
+    void comma.offsetWidth;
+
+    comma.classList.add("anim");
+}
 
 errText.style.visibility = 'hidden';

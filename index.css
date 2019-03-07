@@ -68,12 +68,12 @@ body {
 
 @keyframes fade {
     from {
-        color: #33333300;
-        text-shadow: 2px 2px #b8b8b800;
+        opacity: 0;
+        filter: Alpha(opacity=0);
     }
 
     to {
-        color: #333333ff;
-        text-shadow: 2px 2px #b8b8b8ff;
+        opacity: 1;
+        filter: Alpha(opacity=1);
     }
 }

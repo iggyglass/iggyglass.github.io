@@ -1,6 +1,7 @@
 var errText = document.getElementById("error");
 var comma = document.getElementById("comma");
 var presses = 0;
+var canPlay = true;
 var timer;
 
 function copy() {
@@ -26,17 +27,30 @@ function copy() {
 }
 
 document.addEventListener('keydown', function(e) {
-    if (e.keyCode == 32) {
+    if (e.keyCode == 32) { // Space
         presses++;
         timer = setTimeout(function() { presses = 0; }, 200);
-    }
 
-    if (presses >= 2) {
-        copy();
-        clearTimeout(timer);
-        presses = 0;
+        if (presses >= 2) {
+            copy();
+            clearTimeout(timer);
+            presses = 0;
+        }
     }
 });
+
+document.addEventListener('keyup', function(e) {
+    if (e.keyCode == 67) { // C
+        canPlay = true;
+    }
+});
+
+function onCopy() {
+    if (canPlay) {
+        playAnim();
+        canPlay = false;
+    }
+}
 
 function playAnim() {
     comma.classList.remove("anim");

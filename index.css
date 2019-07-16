@@ -1,12 +1,12 @@
 body {
-    background-color: #f1f1f1;
+    background-color: #333333;
 }
 
 #comma {
     margin: 0px;
     font-size: 15em;
     font-family: 'Times New Roman', Times, serif;
-    color: #333333;
+    color: #f1f1f1;
     text-shadow: 2px 2px #b8b8b8;
     position: absolute;
     left: 50%;
@@ -16,19 +16,19 @@ body {
 }
 
 #comma::selection {
-    background-color: #333333;
-    color: #ffffff;
+    color: #333333;
+    background-color: #fffffffe;
 }
 
 #comma::-moz-selection {
-    background-color: #333333;
-    color: #ffffff;
+    color: #333333;
+    background-color: #fffffffe;
 }
 
 #error {
     cursor: default;
     margin: 0px;
-    color: #333333;
+    color: #ffffff;
     -webkit-user-select: none;      
     -moz-user-select: none;
     -ms-user-select: none;
@@ -50,15 +50,15 @@ body {
     position: absolute;
     bottom: 1%;
     right: 1%;
-    color: #b8b8b8;
+    color: #ffffff;
 }
 
 #copy:hover {
-    color: #333333;
+    color: #dfdfdf;
 }
 
 #copy:active {
-    color: #777777;
+    color: #c0c0c0;
 }
 
 .anim {

@@ -8,7 +8,7 @@ body {
     font-size: 15em;
     font-family: 'Times New Roman', Times, serif;
     color: #f1f1f1;
-    text-shadow: 2px 2px #b8b8b8;
+    text-shadow: 2px 2px #959595;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -18,11 +18,13 @@ body {
 
 #comma::selection {
     color: #333333;
+    text-shadow: 2px 2px #b8b8b8;
     background-color: #fffffffe;
 }
 
 #comma::-moz-selection {
     color: #333333;
+    text-shadow: 2px 2px #b8b8b8;
     background-color: #fffffffe;
 }
 

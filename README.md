@@ -3,7 +3,7 @@
 ### What is a Greek question mark?
 The Greek question mark (0x37E: `;`) is a unicode character that although looking identical to a semicolon (0x03B: `;`) isn't a semicolon.
 
-![0x37E vs 0x03B](https://iggyglass.github.io/resources/neq.png)
+![0x37E vs 0x03B](https://iggyglass.github.io/resources/neq.png =115.5x46)
 
 ### Why does this project exist?
 For easy copying (into clipboard) of the Greek question mark.

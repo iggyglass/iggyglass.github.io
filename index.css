@@ -51,13 +51,16 @@ body {
     bottom: 1%;
     right: 1%;
     color: #ffffff;
+    transition: color 0.2s, font-size 0.05s;
 }
 
 #copy:hover {
+    font-size: 2.5em;
     color: #dfdfdf;
 }
 
 #copy:active {
+    font-size: 2.4em;
     color: #c0c0c0;
 }
 

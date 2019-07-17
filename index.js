@@ -1,8 +1,26 @@
 var errText = document.getElementById("error");
 var comma = document.getElementById("comma");
+var copyEl = document.getElementById("copy");
+
 var presses = 0;
 var canPlay = true;
 var timer;
+
+
+function onCopy() {
+    if (canPlay) {
+        playAnim();
+        canPlay = false;
+    }
+}
+
+function playAnim() {
+    comma.classList.remove("anim");
+
+    void comma.offsetWidth;
+
+    comma.classList.add("anim");
+}
 
 function copy() {
     try {
@@ -45,19 +63,9 @@ document.addEventListener('keyup', function(e) {
     }
 });
 
-function onCopy() {
-    if (canPlay) {
-        playAnim();
-        canPlay = false;
-    }
-}
-
-function playAnim() {
-    comma.classList.remove("anim");
-
-    void comma.offsetWidth;
-
-    comma.classList.add("anim");
-}
+copyEl.addEventListener('click', function(e) {
+    e.preventDefault();
+    copy();
+});
 
 errText.style.visibility = 'hidden';

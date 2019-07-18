@@ -4,8 +4,8 @@ var copyEl = document.getElementById("copy");
 
 var presses = 0;
 var canPlay = true;
+var isHeld = false;
 var timer;
-
 
 function onCopy() {
     if (canPlay) {
@@ -45,8 +45,9 @@ function copy() {
 }
 
 document.addEventListener('keydown', function(e) {
-    if (e.keyCode == 32) { // Space
+    if (e.keyCode == 32 && !isHeld) { // Space
         presses++;
+        isHeld = true;
         timer = setTimeout(function() { presses = 0; }, 200);
 
         if (presses >= 2) {
@@ -60,6 +61,8 @@ document.addEventListener('keydown', function(e) {
 document.addEventListener('keyup', function(e) {
     if (e.keyCode == 67) { // C
         canPlay = true;
+    } else if (e.keyCode == 32) { // Space
+        isHeld = false;
     }
 });
 

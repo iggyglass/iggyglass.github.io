@@ -8,7 +8,7 @@ var isHeld = false;
 var timer;
 
 function onCopy() {
-    if (canPlay) {
+    if (canPlay && window.getSelection().toString() != "") {
         playAnim();
         canPlay = false;
     }
@@ -59,10 +59,10 @@ document.addEventListener('keydown', function(e) {
 });
 
 document.addEventListener('keyup', function(e) {
-    if (e.keyCode == 67) { // C
-        canPlay = true;
-    } else if (e.keyCode == 32) { // Space
+    if (e.keyCode == 32) { // Space
         isHeld = false;
+    } else if (e.keyCode == 67) { // C
+        canPlay = true;
     }
 });
 

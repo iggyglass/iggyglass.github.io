@@ -32,6 +32,8 @@ body {
     cursor: default;
     margin: 0px;
     color: #ffffff;
+    font-size: 1.3em;
+    text-shadow: 0.8px 0.8px #959595;
     -webkit-user-select: none;      
     -moz-user-select: none;
     -ms-user-select: none;
@@ -47,6 +49,7 @@ body {
     cursor: pointer;
     font-size: 2.5em;
     font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px #959595;
     -webkit-user-select: none;      
     -moz-user-select: none;
     -ms-user-select: none;

@@ -4,13 +4,18 @@ var copyEl = document.getElementById("copy");
 
 var presses = 0;
 var canPlay = true;
-var isHeld = false;
+var cHeld = false;
+var spaceHeld = false;
 var timer;
 
 function onCopy() {
-    if (canPlay && window.getSelection().toString() != "") {
+    if (!canPlay && window.getSelection().toString() != "") return;
+
+    if (cHeld) {
         playAnim();
         canPlay = false;
+    } else {
+        playAnim();
     }
 }
 
@@ -45,9 +50,11 @@ function copy() {
 }
 
 document.addEventListener('keydown', function(e) {
-    if (e.keyCode == 32 && !isHeld) { // Space
+    if (e.keyCode == 67) { // C
+        cHeld = true;
+    } else if (e.keyCode == 32 && !spaceHeld) { // Space
         presses++;
-        isHeld = true;
+        spaceHeld = true;
         timer = setTimeout(function() { presses = 0; }, 200);
 
         if (presses >= 2) {
@@ -60,9 +67,10 @@ document.addEventListener('keydown', function(e) {
 
 document.addEventListener('keyup', function(e) {
     if (e.keyCode == 32) { // Space
-        isHeld = false;
+        spaceHeld = false;
     } else if (e.keyCode == 67) { // C
         canPlay = true;
+        cHeld = false;
     }
 });
 

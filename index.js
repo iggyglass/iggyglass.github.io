@@ -9,7 +9,7 @@ var spaceHeld = false;
 var timer;
 
 function onCopy() {
-    if (!canPlay && window.getSelection().toString() != "") return;
+    if (!canPlay || window.getSelection().toString() == "") return;
 
     if (cHeld) {
         playAnim();

@@ -1,5 +1,5 @@
 var errText = document.getElementById("error");
-var comma = document.getElementById("comma");
+var question = document.getElementById("question");
 var copyEl = document.getElementById("copy");
 
 var presses = 0;
@@ -20,11 +20,11 @@ function onCopy() {
 }
 
 function playAnim() {
-    comma.classList.remove("anim");
+    question.classList.remove("anim");
 
-    void comma.offsetWidth;
+    void question.offsetWidth;
 
-    comma.classList.add("anim");
+    question.classList.add("anim");
 }
 
 function copy() {

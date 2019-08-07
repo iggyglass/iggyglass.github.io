@@ -3,7 +3,7 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-#comma {
+#question {
     margin: 0px;
     font-size: 15em;
     font-family: 'Times New Roman', 'Attic';
@@ -16,13 +16,13 @@ body {
     transform: translate(-50%, -50%);
 }
 
-#comma::selection {
+#question::selection {
     color: #333333;
     text-shadow: 2px 2px #b8b8b8;
     background-color: #fffffffe;
 }
 
-#comma::-moz-selection {
+#question::-moz-selection {
     color: #333333;
     text-shadow: 2px 2px #b8b8b8;
     background-color: #fffffffe;

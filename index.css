@@ -6,7 +6,7 @@ body {
 #comma {
     margin: 0px;
     font-size: 15em;
-    font-family: 'Newer Roman', Times, serif;
+    font-family: 'Attic', Times, serif;
     color: #f1f1f1;
     text-shadow: 2px 2px #959595;
     position: absolute;
@@ -94,6 +94,6 @@ body {
 }
 
 @font-face {
-    font-family: 'Newer Roman';
-    src: url('/resources/TimesNewerRoman-Regular.ttf');
+    font-family: 'Attic';
+    src: url('/resources/TimesOldAttic.ttf');
 }
